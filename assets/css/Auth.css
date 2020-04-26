@@ -1,0 +1,161 @@
+body, html{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    /* overflow: scroll; */
+    background: url('../img/bg-login2.jpg');
+    min-height: 450px;
+    background-position: center;
+    background-repeat: repeat-y;
+    background-size: cover;
+    height: 100%;
+
+}
+
+*{
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+/* login */
+#col-login{
+    min-width: 350px;
+    padding-right: unset;
+}
+.wrap #form-login h1{
+    text-align: center;
+    padding: 10px 0;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+.wrap{
+    /* background: url('../img/bg-login2.jpg');
+    min-height: 450px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%; */
+    margin-right: unset;
+
+}
+.wrap #form-login .container{
+    margin-top: 70px;
+    border-radius: 20px;
+    opacity: 0.9;
+    padding: 15px 30px;
+}
+.wrap #form-login p{
+    text-align: center;
+    padding-bottom: 10px;
+}
+.wrap #form-login input {
+    width: 100%;
+    padding: 13px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+    font-size: 15px;
+    border: solid 1px #999999;
+    border-radius: 8px;
+}
+.wrap #form-login .btn{
+    background: #4caf50;
+    color: #fff;
+    padding: 13px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    width: 100%;
+    border-radius: 10px;
+    margin: 5px 0;
+}
+.wrap #form-login .btn:hover{
+    background: salmon;
+}
+.wrap #form-login a{
+    text-decoration: none;
+}
+
+.wrap #form-login a:hover{
+    text-decoration: underline;
+}
+
+#logofb{
+    max-width: -webkit-fill-available;
+}
+
+.pembungkus{text-align: center;}
+.pembungkus p{position: relative;  display: inline-block;}
+.pembungkus p:before{
+    content: " ";
+    position: absolute;
+    border-bottom: 1px solid black;
+    width: 100px;
+    left: -130px;
+    top: 50%;
+}
+.pembungkus p:after{
+    content: " ";
+    position: absolute;
+    border-bottom: 1px solid black;
+    width: 100px;
+    right: -130px;	
+    top: 50%;
+}
+/*======================== Backoffice ==============================*/
+.backoffice-body .login-body{
+    background-color: #999999;
+}
+
+.backoffice-body .form-login{
+    background-color: white;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0px 0px 10px 0px;
+    margin-top: 150px;
+    min-width: 300px;
+}
+
+.backoffice-body .form-login h1{
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 30px;
+}
+
+.backoffice-body .punyaakun {
+    margin-top: 20px;
+    text-align: center; 
+}
+/* =============================BACKOFFICE SIGNUP======================== */
+.backoffice.signup-body .form-daftar{
+    background: none;
+    background-color: white;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0px 0px 10px 0px;
+    margin-top: 20px;
+    min-width: 300px;
+}
+.backoffice.signup-body h1{
+    text-align: center;
+
+}
+.backoffice.signup-body .progress{
+    margin-bottom: 50px;
+}
+
+.backoffice.signup-body .sosmed{
+    margin-bottom: 20px !important;
+
+}
+
+.pesan-error-form {
+    color: red;
+}
+
+.backoffice.signup-body .pesan.selesai h4{
+    padding: 60px;
+    margin-bottom: 50px;
+}
+
