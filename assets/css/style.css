@@ -1,0 +1,365 @@
+body, html{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+*{
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+.pesan-error-form{
+    color: red;
+}
+.filter .isi-filter{
+    margin: 0 5px 30px 5px;
+    border-radius: 10px;
+    border: 1px solid black;
+    background: darkslategrey;
+    padding: 10px 15px;
+}    
+#fotodalamcard{
+    width: 315px;
+    height: 250px;
+    max-width: -webkit-fill-available;
+}
+
+.kanan h4 {
+    margin-top: 5px;
+    margin-bottom: 40px;
+}
+
+.card {
+    margin: 10px 10px 15px 10px;
+}
+
+.card p {
+    margin-top: -10px;
+    margin-bottom: 1px;
+}
+.isi-filter h4, .isi-filter label{
+    color:white;
+}
+
+.isi-filter h4, .isi-filter .form-group {
+    text-align: center;
+}
+
+.row .card.hasil:hover{
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.4);
+    transform: scale(1.02);
+}
+/*============================== Navbar ======================  */
+.navbar{
+    position: relative;
+    z-index: 1;
+}
+.navbar-brand{
+    font-family: Viga;
+    font-size: 32px;
+}
+.navbar.detail{
+    background: white;
+}
+
+/* conditional button logout */
+.navbar .container.email .btn.facebook{
+    display: none;
+}
+
+.navbar .container.facebook .btn.email{
+    display: none;
+}
+/* jumbotron */
+.jumbotron{
+    background-image: url(../img/bg-login.jpg);
+    background-size: cover;
+    height: 540px;
+    text-align: center;
+    position: relative;
+    margin-bottom: 0;
+}
+
+.jumbotron::after{
+    content: '';
+    width: 100%;
+    height: 80%;
+    display: block;
+    background-image: linear-gradient(to top, rgba(0,0,0,1), rgba(0,0,0,0) );
+    position: absolute;
+    bottom:0;
+}
+
+.jumbotron .display-4{
+    color: white;
+    margin-top: 200px;
+    font-weight: 200;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+.jumbotron .container{
+    position: relative;
+    z-index: 1;
+}
+
+.jumbotron .display-4 span{
+    font-weight: 500;
+    
+}
+
+.accordion .card {
+    max-width: -webkit-fill-available;
+}
+
+/* konten kriteria */
+#row-kriteria{
+margin-top: 2rem;
+}
+#row-kriteria .pesan-error-form{
+    color: yellow;
+}
+/* ============= sidebar ================= */
+.card.sidebar .card-header:hover{
+    background-color: #293949;
+}
+
+.card.sidebar .card-header h2{
+    text-align: center;
+}
+
+.card.sidebar .card-header:hover .btn-link{
+    color: white;
+}
+
+.card.sidebar .btn-link{
+    text-transform: uppercase;
+    font-weight: 620;
+    color: #293949;
+    text-decoration: none;
+}
+
+.card-body.filter{
+    padding-left: 40px;
+}
+
+/* footer */
+.foot p{
+    padding: 2px;
+    margin-top: 100px;
+    color: #acacac;
+    font-size: 15px;
+    margin-bottom: 0px;
+    background: #293949;
+}
+
+/*=============================== DEKSTOP =============================== */
+@media (min-width: 992px) { 
+    .index .navbar-brand, .nav-link{
+        color: white !important;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+    }
+    .nav-link{
+        text-transform: uppercase;
+        margin-right: 30px;
+    }
+    
+    .nav-link:hover::after{
+        content: '';
+        display: block;
+        border-bottom: 3px solid #0E85D5;
+        width: 50%;
+        margin: auto;
+        padding-bottom: 5px;
+        margin-bottom: -8px;
+    }
+    
+    .jumbotron{
+        margin-top: -75px;
+        height: 640px;
+    }
+    
+    .jumbotron.result{
+        height: 400px;
+    }
+    
+    .jumbotron .display-4{
+        font-size: 62px;
+    }
+    
+    .jumbotron.result .display-4{
+        margin-top: 100px;
+    }
+    
+    .container.inner-gambar img{
+        width: 870px;
+        height: 600px;
+    }
+}
+/* ============================= Max 991 ============================== */
+@media (max-width: 878px) { 
+    body .jumbotron{
+        height: 300px;
+    }
+    body .jumbotron .container{
+        top: -150px;
+    }
+}
+
+/* ============================= Max 878 ============================== */
+@media (max-width: 878px) { 
+    .card{
+        width: 17rem !important;
+    }
+    .card{
+        margin: auto;
+     }
+     .card{
+         margin-bottom: 20px;
+
+     }
+}
+
+/* ============================= Max 767 ============================== */
+@media (max-width: 767px) { 
+ .kiri{
+     display: none;
+ }
+}
+
+/* ============================= Max 576 ============================== */
+@media (max-width: 576px) { 
+    #col-detail-info {
+        padding: 10px 20px !important;
+    }
+}
+
+/* ============================= Max 557 ============================== */
+@media (max-width: 557px) { 
+ .row.content{
+    display: table; 
+    margin: auto;
+ }   
+} 
+
+
+
+/*============================== KIRI ==================================*/
+.kiri .list-group span{
+    padding: 0 0 0 30px;
+    color: silver;
+}
+
+/* ============================= card ==================================*/
+.card-img-top{
+    padding: 3px;
+}
+
+.card-body{
+    padding: 1rem;
+}
+.card-text{
+    margin-top: unset !important;
+}
+#detailbtn{
+    margin-top: 6px;
+}
+/*============================== Detail Page ===========================*/
+.navbar.detail{
+    background: linear-gradient(180deg, #293949 , transparent);
+}
+#col-detail-img .container.bg-dark img{
+    max-width: -webkit-fill-available;
+}
+
+#col-detail-info .container.sosmed{
+    border: 1px solid rgb(163, 157, 157);    
+}
+
+#col-detail-info .container h1{
+    padding: 10px 0 20px 0;
+}
+
+#col-detail-info .container button{
+    background-color: yellow;
+    color: black;
+    width: -webkit-fill-available;
+}
+
+#col-detail-info .container form{
+    position: sticky;
+    top: 20px;    
+}
+.row.wrap.detail{
+    margin-top: 25px;
+    margin-bottom: 30px;
+}
+
+.container.info .card-text{
+    font-size: 1.1rem;
+}
+#col-detail-img{
+    padding: 0 10px 0;
+}
+#col-detail-info{
+    padding: 0 10px 0 0;
+}
+
+.container.inner-gambar{
+    text-align: center;
+}
+.container.inner-gambar img{
+    width: 870px;
+    height: 600px;
+    max-width: -webkit-fill-available;
+}
+.container.info{
+    color: #434343;
+}
+.container.sosmed{
+    text-align: center;
+    margin: 80px 0 30px;
+}
+.container.sosmed a{
+    color: #434343;
+    font-size: 30px;
+}
+.container.sosmed a:hover{
+    text-decoration: none;
+}
+.container.sosmed .fb:hover{
+    color: blue;
+}
+.container.sosmed .tw:hover{
+    color: #0E85D5;
+}
+.container.sosmed .ig:hover{
+    color:#E91E63;
+}
+.container.sosmed .yt:hover{
+    color: red;
+}
+.container.sosmed span:hover{
+    padding: 0 10px;
+}
+
+.form-pesan h1 {
+    text-align: center;
+    color: #434343;
+}
+
+.hrcenter {
+    width: 80%;
+    margin: auto;
+    border-radius: 10px;
+    border-bottom: 2px solid tomato;
+    border-top: 2px solid tomato;
+}
+
+.container.detail-pesan{
+    margin-top: 15px;
+}
